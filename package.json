@@ -1,0 +1,15 @@
+{
+  "name": "generalized-heuristics",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22.9" },
+  "scripts": {
+    "experiment": "node --env-file-if-exists=.env --import tsx src/cli.ts",
+    "serve": "node --import tsx src/serve.ts",
+    "check": "tsc --noEmit",
+    "test": "tsx --test tests/*.test.ts"
+  },
+  "dependencies": { "@typesafe-ai/sdk": "0.6.0" },
+  "devDependencies": { "@types/node": "^24.0.0", "tsx": "^4.20.0", "typescript": "^5.9.0" }
+}
